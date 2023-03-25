@@ -101,11 +101,11 @@ class _HomeState extends State<Home> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              const Spacer(),
+              const Spacer(flex: 3),
               Text(
                 expressionText,
-                style: const TextStyle(
-                  color: secondaryColor,
+                style: TextStyle(
+                  color: Colors.black.withOpacity(0.4),
                   fontSize: 40,
                   fontWeight: FontWeight.w300,
                 ),
@@ -169,7 +169,7 @@ class _HomeState extends State<Home> {
                   _buildPrimaryButton("="),
                 ],
               ),
-              const SizedBox(height: 32),
+              const Spacer()
             ],
           ),
         ),
